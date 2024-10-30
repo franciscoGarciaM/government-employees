@@ -1,4 +1,4 @@
-package mx.gob.metepec.government_employees;
+package com.trainibit.microservices.primer_API;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -8,6 +8,7 @@ class GovernmentEmployeesApplicationTests {
 
 	@Test
 	void contextLoads() {
+		//comentario
 	}
 
 }

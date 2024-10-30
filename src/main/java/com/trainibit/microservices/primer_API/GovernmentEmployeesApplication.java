@@ -1,16 +1,15 @@
-package mx.gob.metepec.government_employees;
+package com.trainibit.microservices.primer_API;
 
-import mx.gob.metepec.government_employees.entity.Area;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
+@EnableJpaRepositories
 public class GovernmentEmployeesApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GovernmentEmployeesApplication.class, args);
-		Area area = new Area();
-		String atrea = area.getDescription();
 	}
 
 }
