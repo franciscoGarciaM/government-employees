@@ -11,9 +11,7 @@ import java.util.UUID;
 @Table(name = "role_by_employee")
 public class RoleByEmployee {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "role_by_employee_id_gen")
-    @SequenceGenerator(name = "role_by_employee_id_gen", sequenceName = "role_by_employee_id_seq", allocationSize = 1)
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)

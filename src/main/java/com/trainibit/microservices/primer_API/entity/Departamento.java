@@ -10,9 +10,7 @@ import java.util.*;
 @Table(name = "area")
 public class Departamento {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "area_id_gen")
-    @SequenceGenerator(name = "area_id_gen", sequenceName = "area_id_seq", allocationSize = 1)
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Column(name = "description", nullable = false, length = Integer.MAX_VALUE)
