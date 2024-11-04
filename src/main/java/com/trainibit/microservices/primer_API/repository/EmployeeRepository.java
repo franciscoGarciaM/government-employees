@@ -10,6 +10,7 @@ import java.util.UUID;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
-    Employee findByEmailAddressAndPassword(String emailId, String password);
+    Optional<Employee> findByEmailAddressAndPassword(String emailId, String password);
+    Optional<Employee> findByEmailAddress(String emailId);
     Optional<Employee> findByUuid(UUID uuid);
 }
